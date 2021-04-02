@@ -1,0 +1,128 @@
+{
+    "Churn": {
+        "file": "churn_modelling_mod.csv",
+        "label": "Exited",
+        "Boosting": {
+            "max_depth":  3,
+            "learning_rate": 0.29,
+            "n_estimators": 44
+        },
+        "NN": {
+            "hidden_layers_sizes": [30],
+            "activation": "relu",
+            "alpha": 0.0001,
+            "batch_size": 25,
+            "learning_rate": "adaptive",
+            "learning_rate_init": 0.001,
+            "max_iter": 100,
+            "tol": 1e-4
+        },
+        "kmeans": {
+            "n_clusters": 10,
+            "init": 10,
+            "max_iter": 300,
+            "tol": 0.0001,
+            "min": 2,
+            "max": 20
+        },
+        "em": {
+            "components": 23,
+            "init": 1,
+            "max_iter": 100,
+            "tol": 1e-3,
+            "min": 2,
+            "max": 50
+        },
+        "pca": {
+            "components": 12,
+            "tol": 1e-1,
+            "min": 2,
+            "max": 14
+        },
+        "ica": {
+            "components": 12,
+            "iter": 100,
+            "tol": 1e-4,
+            "min": 2,
+            "max": 15
+        },
+        "rp": {
+            "components": 10,
+            "eps": 0.1,
+            "min": 2,
+            "max": 15
+        },
+        "kpca": {
+            "components": 12,
+            "kernel": "rbf",
+            "degree": 3,
+            "coef0": 1,
+            "alpha": 1.0,
+            "min": 2,
+            "max": 16
+        }
+    },
+    "Student": {
+        "file": "student.csv",
+        "label": "Grade",
+        "Boosting": {
+            "max_depth":  4,
+            "learning_rate": 0.2,
+            "n_estimators": 21
+        },
+        "NN": {
+            "hidden_layers_sizes": [7, 7],
+            "activation": "relu",
+            "alpha": 0.00025,
+            "batch_size": 20,
+            "learning_rate": "adaptive",
+            "learning_rate_init": 0.001,
+            "max_iter": 200,
+            "tol": 1e-4
+        },
+        "kmeans": {
+            "n_clusters": 10,
+            "init": 10,
+            "max_iter": 300,
+            "tol": 0.0001,
+            "min": 2,
+            "max": 20
+        },
+        "em": {
+            "components": 5,
+            "init": 1,
+            "max_iter": 100,
+            "tol": 1e-3,
+            "min": 2,
+            "max": 30
+        },
+        "pca": {
+            "components": 36,
+            "tol": 1e-3,
+            "min": 2,
+            "max": 58
+        },
+        "ica": {
+            "components": 41,
+            "iter": 100,
+            "tol": 1e-4,
+            "min": 2,
+            "max": 58
+        },
+        "rp": {
+            "components": 58,
+            "eps": 0.1,
+            "min": 2,
+            "max": 58
+        },
+        "kpca": {
+            "components": 43,
+            "kernel": "poly",
+            "degree": 3,
+            "coef0": 2.5,
+            "alpha": 1.0,
+            "min": 2,
+            "max": 58
+        }
+    }
+}
