@@ -1,0 +1,14 @@
+name: assignment3
+channels:
+  - default
+  - conda-forge
+dependencies:
+- python=3.7
+- scikit-learn
+- numpy
+- matplotlib
+- pandas
+- mlxtend
+- pip
+- pip:
+  - Yellowbrick
